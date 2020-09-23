@@ -1,5 +1,9 @@
 package com.imdb.adapter.api;
 
+/**
+ * Available endpoints for Rapid API.
+ * @author Danilo Portela
+ */
 public enum TitleEndpoint{
 
 	GET_TOP_STRIPEGET("title/get-top-stripe"),
@@ -47,7 +51,7 @@ public enum TitleEndpoint{
 	GET_RELEASES("title/get-releases");
 	
 	
-	
+	/** Route for API endpoint */
 	private String route;
 	
 	TitleEndpoint(String route){
