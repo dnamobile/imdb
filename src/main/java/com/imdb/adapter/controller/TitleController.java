@@ -30,7 +30,7 @@ public class TitleController {
 //	private Logger logger;
 		
 	@GET
-	@Path("/details/{titleId}")
+	@Path("/get-details/{titleId}")
 	@Produces("text/xml")
 	public TitleWrapper getDetails(@PathParam("titleId") String titleId) throws IOException {
 		return service.getDetails(
